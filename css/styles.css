@@ -1,0 +1,279 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Miriam Libre", sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+/* mountains */
+
+.container {
+  margin: 0 auto;
+  padding: 15px;
+  max-width: 1128px;
+}
+
+.mountains-div {
+  border: 5px solid gray;
+  border-radius: 10%;
+  width: 500px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.position-p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  color: #fff;
+  background-color: rgb(47, 79, 79, 0.5);
+
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.mountains-title {
+  margin-bottom: 15px;
+}
+
+.mountains-text {
+  margin-bottom: 15px;
+}
+
+.mountains-img {
+  max-width: 100%;
+  display: block;
+}
+
+.link {
+  display: inline-block;
+  padding: 16px 32px;
+
+  border-radius: 3px;
+  background-color: teal;
+  color: white;
+
+  font-family: sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 72px;
+  margin-bottom: 120px;
+}
+
+.item {
+  height: 300px;
+  background-color: gray;
+  flex-basis: calc((100% - 72px) / 4);
+  text-align: center;
+}
+
+.cont {
+  max-width: 1000px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.cont .heads {
+  max-width: 100%;
+  height: 200px;
+
+  background-color: gray;
+}
+.cont .sidebar {
+  background-color: yellow;
+  max-width: 100%;
+  height: 200px;
+  flex-grow: 1;
+}
+.cont .footer {
+  background-color: blue;
+  max-width: 100%;
+  height: 200px;
+}
+
+.test-title {
+  font-size: 20px;
+}
+
+.div-position {
+  width: 300px;
+  height: 300px;
+  background-color: gray;
+}
+
+.www {
+  display: flex;
+  padding-left: 0;
+  gap: 30px;
+}
+
+.qqq {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.qqq::after {
+  width: 100%;
+  height: 4px;
+  content: "";
+  background-color: black;
+}
+
+.test-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  display: inline-block;
+  padding: 24px 0;
+}
+.overlay {
+  width: 300px;
+  height: 300px;
+  background-color: aqua;
+  position: relative;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.overlay-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: grey;
+  transform: translatey(100%);
+  transition: transform 300ms ease-in-out;
+}
+
+.overlay:hover .overlay-div {
+  transform: translatey(0);
+}
+
+.overlay-div > p {
+  padding: 10px;
+}
+
+.image {
+  max-width: 500px;
+  background-color: gray;
+  padding: 120px 0;
+  margin: 10px auto;
+  background-image: url(../images/mountains.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+/* .image > h1,
+.image > p {
+  color: #fff;
+} */
+
+.header-btn-return {
+  display: inline-block;
+  padding: 20px;
+  background-color: darkblue;
+  width: 120px;
+  text-align: center;
+
+  cursor: pointer;
+  border-radius: 10px;
+  color: aliceblue;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.sticky {
+  width: 600px;
+  height: 600px;
+  border: solid 10px black;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sticky-div {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  margin: 10px;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.test-parent {
+  width: 400px;
+  height: 400px;
+  background-color: teal;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.test-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  transition: transform 250ms ease-in-out;
+  transform: translateY(100%);
+
+  background-color: gray;
+}
+
+.test-parent:hover .test-box {
+  transform: translatey(0);
+}
+
+.test-box > p {
+  padding: 10px;
+}
+
+.l {
+  width: 300px;
+  margin: 0 auto;
+}
